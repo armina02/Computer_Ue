@@ -114,11 +114,24 @@ public class Computer_UE_C
     
     public String getKategorie()
     {
-       String k;
+       String kategorie;
        
-       k = modell.substring(0,1);
+       kategorie = modell.substring(0,1);
        
-       return k;
+       return kategorie;
+    }
+    
+    public String getDisplay()
+    {
+        String display;
+        int pos;
+        
+        
+        pos = modell.indexOf("-")+1;
+        display = modell.substring(pos);
+        
+        return display;
+    
     }
     
     public void printComputer_UE_C()
